@@ -11,4 +11,5 @@ add_executable(ProyectoFinalProgra3 main.cpp
         nodoYarbol/nodo.cpp
         nodoYarbol/nodo.h
         nodoYarbol/arbolPeliculas.cpp
-        nodoYarbol/arbolPeliculas.h)
+        nodoYarbol/arbolPeliculas.h
+)

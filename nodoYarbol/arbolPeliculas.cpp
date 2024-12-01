@@ -3,19 +3,18 @@
 //
 
 #include "arbolPeliculas.h"
-#include <iostream>
 
 // Constructor
 ArbolPeliculas::ArbolPeliculas() : raiz(nullptr) {}
 
 // Destructor
 ArbolPeliculas::~ArbolPeliculas() {
-    // Liberar memoria de forma recursiva (pendiente si es necesario)
+    // Liberar memoria (pendiente si es necesario)
 }
 
 // Método para insertar nodos en el árbol
-void ArbolPeliculas::insertar(const string& title, const string& plotSynopsis, const vector<string>& tags) {
-    Nodo* nuevo = new Nodo(title, plotSynopsis, tags);
+void ArbolPeliculas::insertar(const pelicula& data) {
+    Nodo* nuevo = new Nodo(data);
     if (raiz == nullptr) {
         raiz = nuevo;
     } else {
@@ -23,13 +22,13 @@ void ArbolPeliculas::insertar(const string& title, const string& plotSynopsis, c
         Nodo* padre = nullptr;
         while (actual != nullptr) {
             padre = actual;
-            if (title < actual->getTitle()) {
+            if (data.getTitulo() < actual->getData().getTitulo()) {
                 actual = actual->getLeft();
             } else {
                 actual = actual->getRight();
             }
         }
-        if (title < padre->getTitle()) {
+        if (data.getTitulo() < padre->getData().getTitulo()) {
             padre->setLeft(nuevo);
         } else {
             padre->setRight(nuevo);
@@ -37,13 +36,13 @@ void ArbolPeliculas::insertar(const string& title, const string& plotSynopsis, c
     }
 }
 
-// Método para buscar un nodo por título
-Nodo* ArbolPeliculas::buscar(const string& title) const {
+// Método para buscar nodos por título
+Nodo* ArbolPeliculas::buscar(const string& titulo) const {
     Nodo* actual = raiz;
     while (actual != nullptr) {
-        if (title == actual->getTitle()) {
+        if (titulo == actual->getData().getTitulo()) {
             return actual;
-        } else if (title < actual->getTitle()) {
+        } else if (titulo < actual->getData().getTitulo()) {
             actual = actual->getLeft();
         } else {
             actual = actual->getRight();
@@ -52,7 +51,7 @@ Nodo* ArbolPeliculas::buscar(const string& title) const {
     return nullptr;
 }
 
-// Implementación del Iterator
+// Iterator
 ArbolPeliculas::Iterator::Iterator(Nodo* raiz) {
     if (raiz) {
         nodos.push(raiz);

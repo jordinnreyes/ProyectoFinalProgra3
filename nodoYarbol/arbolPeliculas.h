@@ -5,6 +5,8 @@
 #ifndef ARBOLPELICULAS_H
 #define ARBOLPELICULAS_H
 
+
+
 #include "nodo.h"
 #include <queue>
 
@@ -19,21 +21,25 @@ public:
     // Destructor
     ~ArbolPeliculas();
 
-    // Métodos para el manejo del árbol
-    void insertar(const string& title, const string& plotSynopsis, const vector<string>& tags);
-    Nodo* buscar(const string& title) const;
+    // Métodos para manejar el árbol
+    void insertar(const pelicula& data);
+    Nodo* buscar(const string& titulo) const;
 
-    // Método para recorrer el árbol usando Iterator
+    // Iterator para recorrer el árbol
     class Iterator {
     private:
         queue<Nodo*> nodos;
+
     public:
-        Iterator(Nodo* raiz);
+        explicit Iterator(Nodo* raiz);
         bool hasNext() const;
         Nodo* next();
     };
 
     Iterator crearIterator();
 };
+
+
+
 
 #endif //ARBOLPELICULAS_H

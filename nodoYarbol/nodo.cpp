@@ -5,20 +5,11 @@
 #include "nodo.h"
 
 // Constructor
-Nodo::Nodo(const string& title, const string& plotSynopsis, const vector<string>& tags)
-    : title(title), plotSynopsis(plotSynopsis), tags(tags), left(nullptr), right(nullptr) {}
+Nodo::Nodo(const pelicula& data) : data(data), left(nullptr), right(nullptr) {}
 
 // Getters
-string Nodo::getTitle() const {
-    return title;
-}
-
-string Nodo::getPlotSynopsis() const {
-    return plotSynopsis;
-}
-
-vector<string> Nodo::getTags() const {
-    return tags;
+const pelicula& Nodo::getData() const {
+    return data;
 }
 
 Nodo* Nodo::getLeft() const {
