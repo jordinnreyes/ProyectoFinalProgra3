@@ -128,6 +128,30 @@ ProyectoFinalProgra3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/build
 .PHONY : ProyectoFinalProgra3/fast
 
+classPelicula/builder.obj: classPelicula/builder.cpp.obj
+.PHONY : classPelicula/builder.obj
+
+# target to build an object file
+classPelicula/builder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/builder.cpp.obj
+.PHONY : classPelicula/builder.cpp.obj
+
+classPelicula/builder.i: classPelicula/builder.cpp.i
+.PHONY : classPelicula/builder.i
+
+# target to preprocess a source file
+classPelicula/builder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/builder.cpp.i
+.PHONY : classPelicula/builder.cpp.i
+
+classPelicula/builder.s: classPelicula/builder.cpp.s
+.PHONY : classPelicula/builder.s
+
+# target to generate assembly for a file
+classPelicula/builder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/builder.cpp.s
+.PHONY : classPelicula/builder.cpp.s
+
 classPelicula/pelicula.obj: classPelicula/pelicula.cpp.obj
 .PHONY : classPelicula/pelicula.obj
 
@@ -257,6 +281,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ProyectoFinalProgra3
+	@echo ... classPelicula/builder.obj
+	@echo ... classPelicula/builder.i
+	@echo ... classPelicula/builder.s
 	@echo ... classPelicula/pelicula.obj
 	@echo ... classPelicula/pelicula.i
 	@echo ... classPelicula/pelicula.s
