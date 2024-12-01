@@ -4,7 +4,7 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "Ninja"
+			"name" : "MinGW Makefiles"
 		},
 		"paths" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-bdb8697ad8d2106b2471.json",
+			"jsonFile" : "codemodel-v2-7b67b9dd2812d1ca16cc.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-f71b2b2c125927bf06c2.json",
+			"jsonFile" : "cache-v2-9558f9fb81554a17aa3f.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-7bef9cbc551d3769be88.json",
+			"jsonFile" : "cmakeFiles-v1-b53771f3fb1cd887b9b4.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-f71b2b2c125927bf06c2.json",
+			"jsonFile" : "cache-v2-9558f9fb81554a17aa3f.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-7bef9cbc551d3769be88.json",
+			"jsonFile" : "cmakeFiles-v1-b53771f3fb1cd887b9b4.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,7 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-bdb8697ad8d2106b2471.json",
+			"jsonFile" : "codemodel-v2-7b67b9dd2812d1ca16cc.json",
 			"kind" : "codemodel",
 			"version" : 
 			{

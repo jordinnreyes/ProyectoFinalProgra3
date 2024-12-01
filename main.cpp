@@ -1,4 +1,5 @@
 #include <iostream>
+#include "classPelicula/pelicula.h"
 
 int main()
 {

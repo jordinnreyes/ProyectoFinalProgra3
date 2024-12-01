@@ -5,7 +5,9 @@
 #ifndef PELICULA_H
 #define PELICULA_H
 
+#include <iostream>
 
+using namespace std;
 
 class pelicula {
 

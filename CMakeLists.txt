@@ -3,4 +3,7 @@ project(ProyectoFinalProgra3)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(ProyectoFinalProgra3 main.cpp)
+add_executable(ProyectoFinalProgra3 main.cpp
+        classPelicula/pelicula.cpp
+        classPelicula/pelicula.h
+        classPelicula/procesarCsv.h)
