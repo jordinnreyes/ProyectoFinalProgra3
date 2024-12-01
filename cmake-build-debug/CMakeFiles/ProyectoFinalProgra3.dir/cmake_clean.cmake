@@ -3,8 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.obj.d"
   "CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/procesarCsv.cpp.obj"
   "CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/procesarCsv.cpp.obj.d"
-  "CMakeFiles/ProyectoFinalProgra3.dir/classUsuario/usuario.cpp.obj"
-  "CMakeFiles/ProyectoFinalProgra3.dir/classUsuario/usuario.cpp.obj.d"
   "CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj"
   "CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj.d"
   "CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/arbolPeliculas.cpp.obj"

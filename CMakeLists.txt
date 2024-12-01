@@ -7,7 +7,6 @@ add_executable(ProyectoFinalProgra3 main.cpp
         classPelicula/pelicula.cpp
         classPelicula/pelicula.h
         classPelicula/procesarCsv.cpp
-        classUsuario/usuario.cpp
         classUsuario/usuario.h
         nodoYarbol/nodo.cpp
         nodoYarbol/nodo.h

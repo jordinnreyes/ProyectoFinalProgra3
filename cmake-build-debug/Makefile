@@ -176,30 +176,6 @@ classPelicula/procesarCsv.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/procesarCsv.cpp.s
 .PHONY : classPelicula/procesarCsv.cpp.s
 
-classUsuario/usuario.obj: classUsuario/usuario.cpp.obj
-.PHONY : classUsuario/usuario.obj
-
-# target to build an object file
-classUsuario/usuario.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classUsuario/usuario.cpp.obj
-.PHONY : classUsuario/usuario.cpp.obj
-
-classUsuario/usuario.i: classUsuario/usuario.cpp.i
-.PHONY : classUsuario/usuario.i
-
-# target to preprocess a source file
-classUsuario/usuario.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classUsuario/usuario.cpp.i
-.PHONY : classUsuario/usuario.cpp.i
-
-classUsuario/usuario.s: classUsuario/usuario.cpp.s
-.PHONY : classUsuario/usuario.s
-
-# target to generate assembly for a file
-classUsuario/usuario.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classUsuario/usuario.cpp.s
-.PHONY : classUsuario/usuario.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -287,9 +263,6 @@ help:
 	@echo ... classPelicula/procesarCsv.obj
 	@echo ... classPelicula/procesarCsv.i
 	@echo ... classPelicula/procesarCsv.s
-	@echo ... classUsuario/usuario.obj
-	@echo ... classUsuario/usuario.i
-	@echo ... classUsuario/usuario.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
