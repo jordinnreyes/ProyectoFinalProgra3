@@ -49,5 +49,16 @@ int main()
         cout << endl << "-----------------------" << endl;
     }
 
+
+    //Seleccion de pelicula
+    for (const auto& [id, pelicula] : peliculas) {
+        cout << "ID: " << id << endl;
+        cout << "Título: " << pelicula.getTitulo() << endl;
+
+        pelicula.mostrarDetallesPelicula();
+
+        cout << "-----------------------" << endl;
+    }
+
     return 0;
 }
