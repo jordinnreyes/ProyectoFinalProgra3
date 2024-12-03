@@ -20,6 +20,8 @@ private:
     string sinopsis;
     unordered_set<string> tags;
     string fuente;
+    bool like = false;
+    bool verMasTarde = false;
 public:
     pelicula() = default;
     pelicula(string id_, string titulo_, string sinopsis_, unordered_set<string> tags_, string fuente_) : id(move(id_)),
@@ -31,6 +33,8 @@ public:
     const string& getSinopsis() const { return sinopsis; }
     const unordered_set<string>& getTags() const { return tags; }
     const string& getFuente() const { return fuente; }
+    const bool& getLike() const {return like;}
+    void mostrarDetallesPelicula() const;
 
 
     void configurarPropiedades(
