@@ -11,38 +11,7 @@ private:
     unordered_map<string, pelicula> peliculas;
 
 public:
-    // Función para dividir tags con comillas
-    unordered_set<string> dividirConComillas(const string& str) {
-        unordered_set<string> tokens;
-        istringstream tokenStream(str);
-        string token;
-        bool enComillas = false;
-        string tagCompleto;
-        char c;
 
-        while (tokenStream.get(c)) {
-            if (c == '"') {
-                enComillas = !enComillas;
-                if (!enComillas && !tagCompleto.empty()) {
-                    tokens.insert(tagCompleto);
-                    tagCompleto.clear();
-                }
-            } else if (c == ',' && !enComillas) {
-                if (!tagCompleto.empty()) {
-                    tokens.insert(tagCompleto);
-                    tagCompleto.clear();
-                }
-            } else {
-                tagCompleto += c;
-            }
-        }
-
-        if (!tagCompleto.empty()) {
-            tokens.insert(tagCompleto);
-        }
-
-        return tokens;
-    }
 
     void leerDatosDelCsv(const string& archivoCsv) {
         ifstream archivo(archivoCsv);
@@ -93,7 +62,7 @@ public:
                 }
 
                 // Procesar los tags usando la nueva función dividirConComillas
-                unordered_set<string> tags = dividirConComillas(tagsStr);
+                unordered_set<string> tags = ExtraerTags(tagsStr);
 
                 // Leer synopsis_source
                 getline(stream, split, ',');
@@ -145,4 +114,37 @@ public:
         }
         return resultado;
     }
+
+    unordered_set<string> ExtraerTags(const string& entrada) {
+        unordered_set<string> conjuntoTags;
+        istringstream flujoEntrada(entrada);
+        string fragmentoActual;
+        bool dentroDeComillas = false;
+        string acumulador;
+        char caracter;
+
+        while (flujoEntrada.get(caracter)) {
+            if (caracter == '"') {
+                dentroDeComillas = !dentroDeComillas;
+                if (!dentroDeComillas && !acumulador.empty()) {
+                    conjuntoTags.insert(acumulador);
+                    acumulador.clear();
+                }
+            } else if (caracter == ',' && !dentroDeComillas) {
+                if (!acumulador.empty()) {
+                    conjuntoTags.insert(acumulador);
+                    acumulador.clear();
+                }
+            } else {
+                acumulador += caracter;
+            }
+        }
+
+        if (!acumulador.empty()) {
+            conjuntoTags.insert(acumulador);
+        }
+
+        return conjuntoTags;
+    }
+
 };

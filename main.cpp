@@ -6,21 +6,6 @@ using namespace std;
 
 int main()
 {
-    /*
-    cout << "Bienvenido a nuestro servicio de Streaming!" << endl;
-    cout << "Crea un Usuario!" << endl;
-
-
-    usuario<string>* usuario1 = usuario<string>::getInstance();
-    usuario1->login();
-
-    if(usuario1->getaccesoAlServicio()){
-        cout << "acceso al servicio correcto!";
-    } else{cout << "nop";}
-*/
-
-
-
     // Crear una instancia de LecturaDatos
     LecturaDatos lector;
 
@@ -30,11 +15,36 @@ int main()
     // Leer datos desde el CSV
     lector.leerDatosDelCsv(archivoPrueba);
 
+
     // Obtener las películas leídas
     const auto& peliculas = lector.getPeliculas();
 
+
+    cout << "\nBienvenido a nuestro servicio de Streaming!" << endl;
+    cout << "Crea un Usuario!" << endl;
+
+
+    usuario<string>* usuario1 = usuario<string>::getInstance();
+    usuario1->login();
+
+    if(usuario1->getaccesoAlServicio()){
+        cout << "acceso al servicio correcto!";
+
+    } else{cout << "ocurrio un error";}
+
+
+
+
+
+
+
+
+
+
+
     // Mostrar los datos de las películas
-    cout << "Peliculas cargadas:" << endl;
+
+    /*cout << "Peliculas cargadas:" << endl;
     for (const auto& [id, pelicula] : peliculas) {
         cout << "ID: " << id << endl;
         cout << "Titulo: " << pelicula.getTitulo() << endl;
@@ -48,6 +58,7 @@ int main()
         }
         cout << endl << "-----------------------" << endl;
     }
+    */
 
     return 0;
 }
