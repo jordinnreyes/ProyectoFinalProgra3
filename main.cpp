@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
     // Crear una instancia de LecturaDatos
+    //LecturaDatos lector;
     LecturaDatos lector;
 
     // Archivo de prueba
@@ -44,12 +45,12 @@ int main()
 
     // Mostrar los datos de las películas
 
-    /*cout << "Peliculas cargadas:" << endl;
+    cout << "Peliculas cargadas:" << endl;
     for (const auto& [id, pelicula] : peliculas) {
         cout << "ID: " << id << endl;
         cout << "Titulo: " << pelicula.getTitulo() << endl;
         cout << "Sinopsis: " << pelicula.getSinopsis() << endl;
-        cout << "Fuente: " << pelicula.getFuente() << endl;
+        //cout << "Fuente: " << pelicula.getFuente() << endl;
 
         // Mostrar los tags
         cout << "Tags: ";
@@ -58,9 +59,9 @@ int main()
         }
         cout << endl << "-----------------------" << endl;
     }
-    */
 
 
+/*
     //Seleccion de pelicula
     for (const auto& [id, pelicula] : peliculas) {
         cout << "ID: " << id << endl;
@@ -70,6 +71,6 @@ int main()
 
         cout << "-----------------------" << endl;
     }
-
+*/
     return 0;
 }

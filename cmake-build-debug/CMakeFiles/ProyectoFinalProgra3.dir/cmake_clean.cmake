@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/builder.cpp.obj"
-  "CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/builder.cpp.obj.d"
   "CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.obj"
   "CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.obj.d"
   "CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/procesarCsv.cpp.obj"

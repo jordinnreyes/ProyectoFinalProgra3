@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Fernando\Desktop\Progra Final\ProyectoFinalProgra3-main"
+CMAKE_SOURCE_DIR = C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Fernando\Desktop\Progra Final\ProyectoFinalProgra3-main\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = "C:\Users\Fernando\Desktop\Progra Final\ProyectoFinalProgra3-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2024.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2024.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Fernando\Desktop\Progra Final\ProyectoFinalProgra3-main\cmake-build-debug\CMakeFiles" "C:\Users\Fernando\Desktop\Progra Final\ProyectoFinalProgra3-main\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\cmake-build-debug\CMakeFiles C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Fernando\Desktop\Progra Final\ProyectoFinalProgra3-main\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,30 +127,6 @@ ProyectoFinalProgra3: cmake_check_build_system
 ProyectoFinalProgra3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/build
 .PHONY : ProyectoFinalProgra3/fast
-
-classPelicula/builder.obj: classPelicula/builder.cpp.obj
-.PHONY : classPelicula/builder.obj
-
-# target to build an object file
-classPelicula/builder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/builder.cpp.obj
-.PHONY : classPelicula/builder.cpp.obj
-
-classPelicula/builder.i: classPelicula/builder.cpp.i
-.PHONY : classPelicula/builder.i
-
-# target to preprocess a source file
-classPelicula/builder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/builder.cpp.i
-.PHONY : classPelicula/builder.cpp.i
-
-classPelicula/builder.s: classPelicula/builder.cpp.s
-.PHONY : classPelicula/builder.s
-
-# target to generate assembly for a file
-classPelicula/builder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/builder.cpp.s
-.PHONY : classPelicula/builder.cpp.s
 
 classPelicula/pelicula.obj: classPelicula/pelicula.cpp.obj
 .PHONY : classPelicula/pelicula.obj
@@ -281,9 +257,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ProyectoFinalProgra3
-	@echo ... classPelicula/builder.obj
-	@echo ... classPelicula/builder.i
-	@echo ... classPelicula/builder.s
 	@echo ... classPelicula/pelicula.obj
 	@echo ... classPelicula/pelicula.i
 	@echo ... classPelicula/pelicula.s
