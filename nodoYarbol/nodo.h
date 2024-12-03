@@ -7,8 +7,26 @@
 
 
 
-class nodo {
+#include "../classPelicula/pelicula.h"
 
+class Nodo {
+private:
+    pelicula data;  // Objeto de la clase pelicula
+    Nodo* left;     // Nodo hijo izquierdo
+    Nodo* right;    // Nodo hijo derecho
+
+public:
+    // Constructor
+    explicit Nodo(const pelicula& data);
+
+    // Getters
+    const pelicula& getData() const;
+    Nodo* getLeft() const;
+    Nodo* getRight() const;
+
+    // Setters
+    void setLeft(Nodo* left);
+    void setRight(Nodo* right);
 };
 
 
