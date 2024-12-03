@@ -11,7 +11,7 @@ int main() {
     LecturaDatos lector;
 
     // Ruta del archivo CSV
-    string archivoCsv = "C:/Users/Fernando/Downloads/mpst_full_data - mpst_full_data.csv";
+    string archivoCsv = "C:/Users/Fernando/Downloads/mpst_full_data.csv";
 
     // Leer datos desde el CSV
     lector.leerDatosDelCsv(archivoCsv);

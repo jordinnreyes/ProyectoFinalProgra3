@@ -4,7 +4,7 @@
 
 #include "arbolPeliculas.h"
 
-using namespace std;  // ¡Agregado!
+using namespace std;
 
 ArbolPeliculas::ArbolPeliculas() : raiz(new Nodo('\0')) {}
 
