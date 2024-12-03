@@ -12,7 +12,7 @@ int main() {
     LecturaDatos lector;
 
     // Ruta del archivo CSV
-    string archivoCsv = "C:/Users/Fernando/Downloads/pruebaa.csv";
+    string archivoCsv = "C:/Users/Jordinn/Downloads/pruebaa.csv";
 
     // Leer datos desde el CSV
     lector.leerDatosDelCsv(archivoCsv);
@@ -36,7 +36,7 @@ int main() {
         cout << "1. Buscar por palabra\n";
         cout << "2. Buscar por frase\n";
         cout << "3. Buscar por string\n";
-        cout << "4. Buscar por tag\n";
+        //cout << "4. Buscar por tag\n";
         cout << "5. Salir\n";
         cout << "Opcion:";
         cin >> opcion;
@@ -66,14 +66,14 @@ int main() {
                 resultados = busqueda.buscarPorString(termino);
                 busqueda.mostrarResultados(resultados);
                 break;
-
+/*
             case 4:
                 cout << "Ingrese el tag para buscar:";
                 getline(cin, termino);
                 resultados = busqueda.buscarPorTag(termino);
                 busqueda.mostrarResultados(resultados);
                 break;
-
+*/
             case 5:
                 cout << "Gracias por usar la plataforma. ¡Hasta pronto!\n";
                 break;
