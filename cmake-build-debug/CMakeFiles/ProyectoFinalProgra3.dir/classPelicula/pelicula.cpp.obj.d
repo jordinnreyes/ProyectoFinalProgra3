@@ -1,4 +1,5 @@
 CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.obj: \
+<<<<<<< HEAD
  C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\classPelicula\pelicula.cpp \
  C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\classPelicula\pelicula.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
@@ -171,3 +172,6 @@ CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h
+=======
+ C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\classPelicula\pelicula.cpp
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f

@@ -1,3 +1,8 @@
+
+
+
+
+
 #include <iostream>
 #include "pelicula.h"
 #include <sstream>
@@ -11,38 +16,7 @@ private:
     unordered_map<string, pelicula> peliculas;
 
 public:
-    // Función para dividir tags con comillas
-    unordered_set<string> dividirConComillas(const string& str) {
-        unordered_set<string> tokens;
-        istringstream tokenStream(str);
-        string token;
-        bool enComillas = false;
-        string tagCompleto;
-        char c;
 
-        while (tokenStream.get(c)) {
-            if (c == '"') {
-                enComillas = !enComillas;
-                if (!enComillas && !tagCompleto.empty()) {
-                    tokens.insert(tagCompleto);
-                    tagCompleto.clear();
-                }
-            } else if (c == ',' && !enComillas) {
-                if (!tagCompleto.empty()) {
-                    tokens.insert(tagCompleto);
-                    tagCompleto.clear();
-                }
-            } else {
-                tagCompleto += c;
-            }
-        }
-
-        if (!tagCompleto.empty()) {
-            tokens.insert(tagCompleto);
-        }
-
-        return tokens;
-    }
 
     void leerDatosDelCsv(const string& archivoCsv) {
         ifstream archivo(archivoCsv);
@@ -57,6 +31,8 @@ public:
         getline(archivo, linea);
 
         size_t peliculasExitosas = 0, peliculasFallidas = 0;
+
+
 
         while (getline(archivo, linea)) {
             if (linea.empty()) continue; // Ignorar líneas vacías
@@ -79,25 +55,46 @@ public:
                 }
                 //title = limpiarComillasDobles(title);
 
-                getline(stream, plot_synopsis, ',');
-                plot_synopsis = limpiarComillasDobles(plot_synopsis);
 
+
+                //plot_synopsis = limpiarComillasDobles(plot_synopsis);
+                if (stream.peek() == '"') {
+
+                    getline(stream, plot_synopsis, '"');
+                    stream.get(); // Consumir la comilla inicial
+                    getline(stream, plot_synopsis, '"');
+                    //stream.get(); // Consumir la coma después de las comillas
+                } else {
+                    getline(stream, plot_synopsis, ',');
+                }
+
+
+
+
+                limpiarComillasDobles(tagsStr);
                 // Leer tagsStr, que está entre comillas
                 if (stream.peek() == '"') {
-                    getline(stream, tagsStr, '"');
+                    //getline(stream, tagsStr, '"');
                     stream.get();
                     getline(stream, tagsStr, '"'); // Leer hasta la siguiente comilla
                     stream.get(); // Consumir la coma después de la comilla
+                    cout << "Tags con comillas: '" << tagsStr << "'" << endl;
+
                 } else {
-                    getline(stream, tagsStr, ','); // Leer hasta la coma si no está entre comillas
+                    getline(stream, tagsStr, ',');// Leer hasta la coma si no está entre comillas
+                    cout << "Tags sin comillas: '" << tagsStr << "'" << endl;
                 }
 
+
                 // Procesar los tags usando la nueva función dividirConComillas
-                unordered_set<string> tags = dividirConComillas(tagsStr);
+                unordered_set<string> tags  = ExtraerTags(tagsStr);
+
+
 
                 // Leer synopsis_source
                 getline(stream, split, ',');
                 getline(stream, split, ',');
+
 
 
                 getline(stream, synopsis_source);
@@ -145,4 +142,59 @@ public:
         }
         return resultado;
     }
+
+    unordered_set<string> ExtraerTags(const string& entrada) {
+
+        unordered_set<string> conjuntoTags;
+
+        // Validar entrada vacía
+        if (entrada.empty()) {
+            cout << "vacio ";
+            return conjuntoTags; // Retorna vacío
+        }
+        // Si no contiene comillas ni comas, es un único tag
+        if (entrada.find('"') == string::npos && entrada.find(',') == string::npos) {
+            conjuntoTags.insert(entrada);
+            return conjuntoTags; // Salir inmediatamente
+        }
+
+
+        istringstream flujoEntrada(entrada);
+        string fragmentoActual;
+        bool dentroDeComillas = false;
+        string acumulador;
+        char caracter;
+
+        while (flujoEntrada.get(caracter)) {
+            if (caracter == '"') {
+                dentroDeComillas = !dentroDeComillas;
+                if (!dentroDeComillas && !acumulador.empty()) {
+                    conjuntoTags.insert(acumulador);
+                    acumulador.clear();
+                }
+            } else if (caracter == ',' && !dentroDeComillas) {
+                if (!acumulador.empty()) {
+                    conjuntoTags.insert(acumulador);
+                    acumulador.clear();
+                }
+            } else {
+                acumulador += caracter;
+            }
+        }
+
+        if (!acumulador.empty()) {
+            conjuntoTags.insert(acumulador);
+        }
+
+        return conjuntoTags;
+    }
+
+
+
+
+
+
+
+
 };
+

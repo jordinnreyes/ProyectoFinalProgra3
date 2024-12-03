@@ -1,0 +1,3 @@
+"imdb_id,title,plot_synopsis,tags,split,synopsis_source"
+"tt001,title1,""Plot synopsis 1"",""tag1,tag2"",test,source1"
+"tt002,title2,""Plot synopsis 2"",""tag3,tag4"",test,source2"

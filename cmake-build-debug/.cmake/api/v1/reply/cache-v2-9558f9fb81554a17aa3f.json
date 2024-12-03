@@ -55,7 +55,15 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<< HEAD
 			"value" : "c:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/cmake-build-debug"
+=======
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9558f9fb81554a17aa3f.json
+			"value" : "c:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/cmake-build-debug"
+========
+			"value" : "c:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3/cmake-build-debug"
+>>>>>>>> a39e16108ecb849b667a345f0d05ef264d33cebd:cmake-build-debug/.cmake/api/v1/reply/cache-v2-96538026d6bd0a8a84ce.json
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -559,7 +567,15 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<< HEAD
 			"value" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/cmake-build-debug/CMakeFiles/pkgRedirects"
+=======
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9558f9fb81554a17aa3f.json
+			"value" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/cmake-build-debug/CMakeFiles/pkgRedirects"
+========
+			"value" : "C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3/cmake-build-debug/CMakeFiles/pkgRedirects"
+>>>>>>>> a39e16108ecb849b667a345f0d05ef264d33cebd:cmake-build-debug/.cmake/api/v1/reply/cache-v2-96538026d6bd0a8a84ce.json
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,7 +647,15 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<< HEAD
 			"value" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3"
+=======
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9558f9fb81554a17aa3f.json
+			"value" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3"
+========
+			"value" : "C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3"
+>>>>>>>> a39e16108ecb849b667a345f0d05ef264d33cebd:cmake-build-debug/.cmake/api/v1/reply/cache-v2-96538026d6bd0a8a84ce.json
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1267,7 +1291,15 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<< HEAD
 			"value" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/cmake-build-debug"
+=======
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9558f9fb81554a17aa3f.json
+			"value" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/cmake-build-debug"
+========
+			"value" : "C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3/cmake-build-debug"
+>>>>>>>> a39e16108ecb849b667a345f0d05ef264d33cebd:cmake-build-debug/.cmake/api/v1/reply/cache-v2-96538026d6bd0a8a84ce.json
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
 		},
 		{
 			"name" : "ProyectoFinalProgra3_IS_TOP_LEVEL",
@@ -1291,7 +1323,15 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<< HEAD
 			"value" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3"
+=======
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9558f9fb81554a17aa3f.json
+			"value" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3"
+========
+			"value" : "C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3"
+>>>>>>>> a39e16108ecb849b667a345f0d05ef264d33cebd:cmake-build-debug/.cmake/api/v1/reply/cache-v2-96538026d6bd0a8a84ce.json
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

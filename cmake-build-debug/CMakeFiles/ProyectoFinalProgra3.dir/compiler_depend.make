@@ -187,6 +187,7 @@ CMakeFiles/ProyectoFinalProgra3.dir/classBusqueda/busqueda.cpp.obj: C:/Users/Jor
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/nodoYarbol/nodo.h \
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classBusqueda/busqueda.h
 
+<<<<<<< HEAD
 CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.obj: C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classPelicula/pelicula.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
@@ -359,6 +360,9 @@ CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.obj: C:/Users/Jor
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classPelicula/pelicula.h
+=======
+CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.obj: C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classPelicula/pelicula.cpp
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
 
 CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/procesarCsv.cpp.obj: C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classPelicula/procesarCsv.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
@@ -558,7 +562,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: C:/Users/Jordinn/CLionProjects
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
+=======
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
@@ -603,19 +610,27 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: C:/Users/Jordinn/CLionProjects
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
+=======
+  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+=======
+  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
@@ -626,7 +641,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: C:/Users/Jordinn/CLionProjects
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+=======
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
@@ -639,7 +657,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: C:/Users/Jordinn/CLionProjects
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
+=======
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
@@ -659,7 +680,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: C:/Users/Jordinn/CLionProjects
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
+=======
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
@@ -672,7 +696,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: C:/Users/Jordinn/CLionProjects
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+=======
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -729,12 +756,17 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: C:/Users/Jordinn/CLionProjects
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classPelicula/pelicula.h \
+<<<<<<< HEAD
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/nodoYarbol/arbolPeliculas.h \
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classBusqueda/busqueda.h \
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classPelicula/pelicula.h \
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classPelicula/procesarCsv.cpp \
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/nodoYarbol/arbolPeliculas.h \
   C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/nodoYarbol/nodo.h
+=======
+  C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classPelicula/procesarCsv.cpp \
+  C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classUsuario/usuario.h
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
 
 CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/arbolPeliculas.cpp.obj: C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/nodoYarbol/arbolPeliculas.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
@@ -753,6 +785,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/arbolPeliculas.cpp.obj: C:/Users/
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+<<<<<<< HEAD
+=======
+  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
@@ -797,12 +833,20 @@ CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/arbolPeliculas.cpp.obj: C:/Users/
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
+<<<<<<< HEAD
+=======
+  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+<<<<<<< HEAD
+=======
+  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
@@ -829,6 +873,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/arbolPeliculas.cpp.obj: C:/Users/
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
+<<<<<<< HEAD
+=======
+  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
@@ -847,6 +895,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/arbolPeliculas.cpp.obj: C:/Users/
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+<<<<<<< HEAD
+=======
+  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -975,7 +1027,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/nodo.cpp.obj: C:/Users/Jordinn/CL
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
+=======
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
@@ -984,8 +1039,11 @@ CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/nodo.cpp.obj: C:/Users/Jordinn/CL
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+=======
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
@@ -996,7 +1054,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/nodo.cpp.obj: C:/Users/Jordinn/CL
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+=======
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
@@ -1038,7 +1099,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/nodo.cpp.obj: C:/Users/Jordinn/CL
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
+<<<<<<< HEAD
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+=======
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -1488,4 +1552,9 @@ C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/1
 
 C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/main.cpp:
 
+<<<<<<< HEAD
+=======
+C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/classUsuario/usuario.h:
+
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
 C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/nodoYarbol/nodo.cpp:

@@ -150,6 +150,10 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+<<<<<<< HEAD
+=======
+ C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\classUsuario/usuario.h \
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
  C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\classPelicula/procesarCsv.cpp \
  C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\classPelicula/pelicula.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
@@ -178,6 +182,7 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+<<<<<<< HEAD
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
  C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\nodoYarbol/arbolPeliculas.h \
  C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\nodoYarbol/nodo.h \
@@ -194,3 +199,6 @@ CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h
+=======
+ C:/Program\ Files/JetBrains/CLion\ 2024.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc
+>>>>>>> 9194039c247c3953a12e14df75928b690ce4e34f
