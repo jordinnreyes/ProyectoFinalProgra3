@@ -6,4 +6,13 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(ProyectoFinalProgra3 main.cpp
         classPelicula/pelicula.cpp
         classPelicula/pelicula.h
-        classPelicula/procesarCsv.h)
+        classPelicula/procesarCsv.cpp
+        classUsuario/usuario.h
+        nodoYarbol/nodo.cpp
+        nodoYarbol/nodo.h
+        nodoYarbol/arbolPeliculas.cpp
+        nodoYarbol/arbolPeliculas.h
+        classBusqueda/busqueda.cpp
+        classBusqueda/busqueda.h
+        classPelicula/procesarCsv.h
+)

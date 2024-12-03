@@ -1,0 +1,148 @@
+#include <iostream>
+#include "pelicula.h"
+#include <sstream>
+#include <fstream>
+#include <unordered_map>
+#include <unordered_set>
+using namespace std;
+
+class LecturaDatos {
+private:
+    unordered_map<string, pelicula> peliculas;
+
+public:
+    // Función para dividir tags con comillas
+    unordered_set<string> dividirConComillas(const string& str) {
+        unordered_set<string> tokens;
+        istringstream tokenStream(str);
+        string token;
+        bool enComillas = false;
+        string tagCompleto;
+        char c;
+
+        while (tokenStream.get(c)) {
+            if (c == '"') {
+                enComillas = !enComillas;
+                if (!enComillas && !tagCompleto.empty()) {
+                    tokens.insert(tagCompleto);
+                    tagCompleto.clear();
+                }
+            } else if (c == ',' && !enComillas) {
+                if (!tagCompleto.empty()) {
+                    tokens.insert(tagCompleto);
+                    tagCompleto.clear();
+                }
+            } else {
+                tagCompleto += c;
+            }
+        }
+
+        if (!tagCompleto.empty()) {
+            tokens.insert(tagCompleto);
+        }
+
+        return tokens;
+    }
+
+    void leerDatosDelCsv(const string& archivoCsv) {
+        ifstream archivo(archivoCsv);
+        string linea;
+
+        if (!archivo.is_open()) {
+            cerr << "No se pudo abrir el archivo: " << archivoCsv << endl;
+            return;
+        }
+
+        // Leer la cabecera del archivo
+        getline(archivo, linea);
+
+        size_t peliculasExitosas = 0, peliculasFallidas = 0;
+
+        while (getline(archivo, linea)) {
+            if (linea.empty()) continue; // Ignorar líneas vacías
+
+            istringstream stream(linea);
+            string imdb_id, title, plot_synopsis, tagsStr, split, synopsis_source;
+
+            try {
+                // Procesar campos respetando las comillas
+                getline(stream, imdb_id, '"');
+                getline(stream, imdb_id, ',');
+
+                // Leer title con la lógica que sugeriste
+                if (stream.peek() == '"') {
+                    stream.get(); // Consumir la comilla inicial
+                    getline(stream, title, '"');
+                    stream.get(); // Consumir la coma después de las comillas
+                } else {
+                    getline(stream, title, ',');
+                }
+                //title = limpiarComillasDobles(title);
+
+                getline(stream, plot_synopsis, ',');
+                plot_synopsis = limpiarComillasDobles(plot_synopsis);
+
+                // Leer tagsStr, que está entre comillas
+                if (stream.peek() == '"') {
+                    getline(stream, tagsStr, '"');
+                    stream.get();
+                    getline(stream, tagsStr, '"'); // Leer hasta la siguiente comilla
+                    stream.get(); // Consumir la coma después de la comilla
+                } else {
+                    getline(stream, tagsStr, ','); // Leer hasta la coma si no está entre comillas
+                }
+
+                // Procesar los tags usando la nueva función dividirConComillas
+                unordered_set<string> tags = dividirConComillas(tagsStr);
+
+                // Leer synopsis_source
+                getline(stream, split, ',');
+                getline(stream, split, ',');
+
+
+                getline(stream, synopsis_source);
+                getline(stream, synopsis_source, '"'); // Leer hasta la siguiente comilla
+                if (stream.peek() == ',') {
+                    stream.get(); // Consumir la coma después de las comillas
+                }
+
+
+                // Configurar la nueva película
+                pelicula nuevaPelicula;
+                nuevaPelicula.configurarPropiedades(imdb_id, title, plot_synopsis, tags, synopsis_source);
+
+                // Guardar la película en el mapa
+                peliculas[imdb_id] = move(nuevaPelicula);
+                peliculasExitosas++;
+            } catch (const exception& e) {
+                cerr << "Error al procesar linea: " << linea << ". Detalles: " << e.what() << endl;
+                peliculasFallidas++;
+            }
+        }
+
+        archivo.close();
+
+        cout << "Peliculas leidas correctamente: " << peliculasExitosas << endl;
+        cout << "Peliculas fallidas: " << peliculasFallidas << endl;
+    }
+
+    const unordered_map<string, pelicula>& getPeliculas() const {
+        return peliculas;
+    }
+
+    // Función para limpiar comillas dobles escapadas
+    string limpiarComillasDobles(const string& input) {
+        string resultado = input;
+        // Reemplazar "" por "
+        size_t pos = 0;
+        while ((pos = resultado.find("\"\"", pos)) != string::npos) {
+            resultado.replace(pos, 2, "\"");
+            pos++;
+        }
+        // Eliminar las comillas al inicio y al final, si existen
+        if (!resultado.empty() && resultado.front() == '"' && resultado.back() == '"') {
+            resultado = resultado.substr(1, resultado.size() - 2);
+        }
+        return resultado;
+    }
+};

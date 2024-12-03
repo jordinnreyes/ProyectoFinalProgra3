@@ -128,6 +128,30 @@ ProyectoFinalProgra3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/build
 .PHONY : ProyectoFinalProgra3/fast
 
+classBusqueda/busqueda.obj: classBusqueda/busqueda.cpp.obj
+.PHONY : classBusqueda/busqueda.obj
+
+# target to build an object file
+classBusqueda/busqueda.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classBusqueda/busqueda.cpp.obj
+.PHONY : classBusqueda/busqueda.cpp.obj
+
+classBusqueda/busqueda.i: classBusqueda/busqueda.cpp.i
+.PHONY : classBusqueda/busqueda.i
+
+# target to preprocess a source file
+classBusqueda/busqueda.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classBusqueda/busqueda.cpp.i
+.PHONY : classBusqueda/busqueda.cpp.i
+
+classBusqueda/busqueda.s: classBusqueda/busqueda.cpp.s
+.PHONY : classBusqueda/busqueda.s
+
+# target to generate assembly for a file
+classBusqueda/busqueda.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classBusqueda/busqueda.cpp.s
+.PHONY : classBusqueda/busqueda.cpp.s
+
 classPelicula/pelicula.obj: classPelicula/pelicula.cpp.obj
 .PHONY : classPelicula/pelicula.obj
 
@@ -151,6 +175,30 @@ classPelicula/pelicula.s: classPelicula/pelicula.cpp.s
 classPelicula/pelicula.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.s
 .PHONY : classPelicula/pelicula.cpp.s
+
+classPelicula/procesarCsv.obj: classPelicula/procesarCsv.cpp.obj
+.PHONY : classPelicula/procesarCsv.obj
+
+# target to build an object file
+classPelicula/procesarCsv.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/procesarCsv.cpp.obj
+.PHONY : classPelicula/procesarCsv.cpp.obj
+
+classPelicula/procesarCsv.i: classPelicula/procesarCsv.cpp.i
+.PHONY : classPelicula/procesarCsv.i
+
+# target to preprocess a source file
+classPelicula/procesarCsv.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/procesarCsv.cpp.i
+.PHONY : classPelicula/procesarCsv.cpp.i
+
+classPelicula/procesarCsv.s: classPelicula/procesarCsv.cpp.s
+.PHONY : classPelicula/procesarCsv.s
+
+# target to generate assembly for a file
+classPelicula/procesarCsv.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/procesarCsv.cpp.s
+.PHONY : classPelicula/procesarCsv.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -176,6 +224,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+nodoYarbol/arbolPeliculas.obj: nodoYarbol/arbolPeliculas.cpp.obj
+.PHONY : nodoYarbol/arbolPeliculas.obj
+
+# target to build an object file
+nodoYarbol/arbolPeliculas.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/arbolPeliculas.cpp.obj
+.PHONY : nodoYarbol/arbolPeliculas.cpp.obj
+
+nodoYarbol/arbolPeliculas.i: nodoYarbol/arbolPeliculas.cpp.i
+.PHONY : nodoYarbol/arbolPeliculas.i
+
+# target to preprocess a source file
+nodoYarbol/arbolPeliculas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/arbolPeliculas.cpp.i
+.PHONY : nodoYarbol/arbolPeliculas.cpp.i
+
+nodoYarbol/arbolPeliculas.s: nodoYarbol/arbolPeliculas.cpp.s
+.PHONY : nodoYarbol/arbolPeliculas.s
+
+# target to generate assembly for a file
+nodoYarbol/arbolPeliculas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/arbolPeliculas.cpp.s
+.PHONY : nodoYarbol/arbolPeliculas.cpp.s
+
+nodoYarbol/nodo.obj: nodoYarbol/nodo.cpp.obj
+.PHONY : nodoYarbol/nodo.obj
+
+# target to build an object file
+nodoYarbol/nodo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/nodo.cpp.obj
+.PHONY : nodoYarbol/nodo.cpp.obj
+
+nodoYarbol/nodo.i: nodoYarbol/nodo.cpp.i
+.PHONY : nodoYarbol/nodo.i
+
+# target to preprocess a source file
+nodoYarbol/nodo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/nodo.cpp.i
+.PHONY : nodoYarbol/nodo.cpp.i
+
+nodoYarbol/nodo.s: nodoYarbol/nodo.cpp.s
+.PHONY : nodoYarbol/nodo.s
+
+# target to generate assembly for a file
+nodoYarbol/nodo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/nodoYarbol/nodo.cpp.s
+.PHONY : nodoYarbol/nodo.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +281,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ProyectoFinalProgra3
+	@echo ... classBusqueda/busqueda.obj
+	@echo ... classBusqueda/busqueda.i
+	@echo ... classBusqueda/busqueda.s
 	@echo ... classPelicula/pelicula.obj
 	@echo ... classPelicula/pelicula.i
 	@echo ... classPelicula/pelicula.s
+	@echo ... classPelicula/procesarCsv.obj
+	@echo ... classPelicula/procesarCsv.i
+	@echo ... classPelicula/procesarCsv.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... nodoYarbol/arbolPeliculas.obj
+	@echo ... nodoYarbol/arbolPeliculas.i
+	@echo ... nodoYarbol/arbolPeliculas.s
+	@echo ... nodoYarbol/nodo.obj
+	@echo ... nodoYarbol/nodo.i
+	@echo ... nodoYarbol/nodo.s
 .PHONY : help
 
 
