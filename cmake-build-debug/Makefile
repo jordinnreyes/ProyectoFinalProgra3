@@ -128,6 +128,30 @@ ProyectoFinalProgra3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/build
 .PHONY : ProyectoFinalProgra3/fast
 
+classBusqueda/busqueda.obj: classBusqueda/busqueda.cpp.obj
+.PHONY : classBusqueda/busqueda.obj
+
+# target to build an object file
+classBusqueda/busqueda.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classBusqueda/busqueda.cpp.obj
+.PHONY : classBusqueda/busqueda.cpp.obj
+
+classBusqueda/busqueda.i: classBusqueda/busqueda.cpp.i
+.PHONY : classBusqueda/busqueda.i
+
+# target to preprocess a source file
+classBusqueda/busqueda.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classBusqueda/busqueda.cpp.i
+.PHONY : classBusqueda/busqueda.cpp.i
+
+classBusqueda/busqueda.s: classBusqueda/busqueda.cpp.s
+.PHONY : classBusqueda/busqueda.s
+
+# target to generate assembly for a file
+classBusqueda/busqueda.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoFinalProgra3.dir\build.make CMakeFiles/ProyectoFinalProgra3.dir/classBusqueda/busqueda.cpp.s
+.PHONY : classBusqueda/busqueda.cpp.s
+
 classPelicula/pelicula.obj: classPelicula/pelicula.cpp.obj
 .PHONY : classPelicula/pelicula.obj
 
@@ -257,6 +281,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ProyectoFinalProgra3
+	@echo ... classBusqueda/busqueda.obj
+	@echo ... classBusqueda/busqueda.i
+	@echo ... classBusqueda/busqueda.s
 	@echo ... classPelicula/pelicula.obj
 	@echo ... classPelicula/pelicula.i
 	@echo ... classPelicula/pelicula.s

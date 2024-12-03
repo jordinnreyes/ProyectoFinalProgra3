@@ -4,10 +4,10 @@
 
 #include "arbolPeliculas.h"
 
-using namespace std;
-
+// Constructor
 ArbolPeliculas::ArbolPeliculas() : raiz(new Nodo('\0')) {}
 
+// Metodo para insertar nodos en el árbol
 void ArbolPeliculas::insertar(const pelicula& peli) {
     Nodo* actual = raiz;
     for (char c : peli.getTitulo()) {
@@ -17,6 +17,7 @@ void ArbolPeliculas::insertar(const pelicula& peli) {
     actual->agregarPelicula(peli);
 }
 
+// Metodo para buscar películas por título
 vector<pelicula> ArbolPeliculas::buscar(const string& titulo) const {
     Nodo* actual = raiz;
     for (char c : titulo) {
@@ -28,6 +29,12 @@ vector<pelicula> ArbolPeliculas::buscar(const string& titulo) const {
     return actual->getPeliculas();
 }
 
+// Metodo para devolver la raíz
+Nodo* ArbolPeliculas::getRaiz() const {
+    return raiz;
+}
+
+// Destructor
 ArbolPeliculas::~ArbolPeliculas() {
     delete raiz;
 }

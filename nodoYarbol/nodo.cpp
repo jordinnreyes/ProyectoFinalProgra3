@@ -4,6 +4,7 @@
 
 #include "nodo.h"
 
+// Métodos existentes
 char Nodo::getCaracter() const {
     return caracter;
 }
@@ -27,6 +28,12 @@ const vector<pelicula>& Nodo::getPeliculas() const {
     return peliculas;
 }
 
+// Metodo para devolver todos los hijos
+const unordered_map<char, Nodo*>& Nodo::getHijos() const {
+    return hijos;
+}
+
+// Destructor
 Nodo::~Nodo() {
     for (auto& [_, hijo] : hijos) {
         delete hijo;
