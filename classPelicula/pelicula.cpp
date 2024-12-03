@@ -1,3 +1,4 @@
+/*
 #include "pelicula.h"
 
 void pelicula::mostrarDetallesPelicula() const {
@@ -25,3 +26,4 @@ void pelicula::mostrarDetallesPelicula() const {
         cout << "No se realizó ninguna acción." << endl;
     }
 }
+*/
