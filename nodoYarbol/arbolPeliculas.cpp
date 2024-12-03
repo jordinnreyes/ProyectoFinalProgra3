@@ -5,78 +5,36 @@
 #include "arbolPeliculas.h"
 
 // Constructor
-ArbolPeliculas::ArbolPeliculas() : raiz(nullptr) {}
+ArbolPeliculas::ArbolPeliculas() : raiz(new Nodo('\0')) {}
+
+// Metodo para insertar nodos en el árbol
+void ArbolPeliculas::insertar(const pelicula& peli) {
+    Nodo* actual = raiz;
+    for (char c : peli.getTitulo()) {
+        actual->agregarHijo(c);
+        actual = actual->getHijo(c);
+    }
+    actual->agregarPelicula(peli);
+}
+
+// Metodo para buscar películas por título
+vector<pelicula> ArbolPeliculas::buscar(const string& titulo) const {
+    Nodo* actual = raiz;
+    for (char c : titulo) {
+        actual = actual->getHijo(c);
+        if (actual == nullptr) {
+            return {};
+        }
+    }
+    return actual->getPeliculas();
+}
+
+// Metodo para devolver la raíz
+Nodo* ArbolPeliculas::getRaiz() const {
+    return raiz;
+}
 
 // Destructor
 ArbolPeliculas::~ArbolPeliculas() {
-    // Liberar memoria (pendiente si es necesario)
-}
-
-// Método para insertar nodos en el árbol
-void ArbolPeliculas::insertar(const pelicula& data) {
-    Nodo* nuevo = new Nodo(data);
-    if (raiz == nullptr) {
-        raiz = nuevo;
-    } else {
-        Nodo* actual = raiz;
-        Nodo* padre = nullptr;
-        while (actual != nullptr) {
-            padre = actual;
-            if (data.getTitulo() < actual->getData().getTitulo()) {
-                actual = actual->getLeft();
-            } else {
-                actual = actual->getRight();
-            }
-        }
-        if (data.getTitulo() < padre->getData().getTitulo()) {
-            padre->setLeft(nuevo);
-        } else {
-            padre->setRight(nuevo);
-        }
-    }
-}
-
-// Método para buscar nodos por título
-Nodo* ArbolPeliculas::buscar(const string& titulo) const {
-    Nodo* actual = raiz;
-    while (actual != nullptr) {
-        if (titulo == actual->getData().getTitulo()) {
-            return actual;
-        } else if (titulo < actual->getData().getTitulo()) {
-            actual = actual->getLeft();
-        } else {
-            actual = actual->getRight();
-        }
-    }
-    return nullptr;
-}
-
-// Iterator
-ArbolPeliculas::Iterator::Iterator(Nodo* raiz) {
-    if (raiz) {
-        nodos.push(raiz);
-    }
-}
-
-bool ArbolPeliculas::Iterator::hasNext() const {
-    return !nodos.empty();
-}
-
-Nodo* ArbolPeliculas::Iterator::next() {
-    if (nodos.empty()) {
-        return nullptr;
-    }
-    Nodo* actual = nodos.front();
-    nodos.pop();
-    if (actual->getLeft()) {
-        nodos.push(actual->getLeft());
-    }
-    if (actual->getRight()) {
-        nodos.push(actual->getRight());
-    }
-    return actual;
-}
-
-ArbolPeliculas::Iterator ArbolPeliculas::crearIterator() {
-    return Iterator(raiz);
+    delete raiz;
 }

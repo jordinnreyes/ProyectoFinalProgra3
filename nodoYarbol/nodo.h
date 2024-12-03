@@ -5,30 +5,34 @@
 #ifndef NODO_H
 #define NODO_H
 
-
-
+#include <unordered_map>
+#include <vector>
 #include "../classPelicula/pelicula.h"
+
+using namespace std;
 
 class Nodo {
 private:
-    pelicula data;  // Objeto de la clase pelicula
-    Nodo* left;     // Nodo hijo izquierdo
-    Nodo* right;    // Nodo hijo derecho
+    char caracter;
+    unordered_map<char, Nodo*> hijos;
+    vector<pelicula> peliculas;
 
 public:
     // Constructor
-    explicit Nodo(const pelicula& data);
+    Nodo(char caracter) : caracter(caracter) {}
 
-    // Getters
-    const pelicula& getData() const;
-    Nodo* getLeft() const;
-    Nodo* getRight() const;
+    // Métodos
+    char getCaracter() const;
+    Nodo* getHijo(char c) const;
+    void agregarHijo(char c);
+    void agregarPelicula(const pelicula& peli);
+    const vector<pelicula>& getPeliculas() const;
 
-    // Setters
-    void setLeft(Nodo* left);
-    void setRight(Nodo* right);
+    // Nuevo método para devolver todos los hijos
+    const unordered_map<char, Nodo*>& getHijos() const;
+
+    // Destructor
+    ~Nodo();
 };
 
-
-
-#endif //NODO_H
+#endif // NODO_H

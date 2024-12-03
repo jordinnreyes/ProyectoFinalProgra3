@@ -12,4 +12,6 @@ add_executable(ProyectoFinalProgra3 main.cpp
         nodoYarbol/nodo.h
         nodoYarbol/arbolPeliculas.cpp
         nodoYarbol/arbolPeliculas.h
+        classBusqueda/busqueda.cpp
+        classBusqueda/busqueda.h
 )

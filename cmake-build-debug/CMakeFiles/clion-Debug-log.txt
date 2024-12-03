@@ -1,4 +1,5 @@
 "C:\Program Files\JetBrains\CLion 2024.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3 -B C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\cmake-build-debug
--- Configuring done (0.6s)
--- Generating done (0.4s)
+-- Configuring done (0.3s)
+-- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/cmake-build-debug
+CMake File API: C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\cmake-build-debug: failed to load from 'C:\Users\Jordinn\CLionProjects\ProyectoFinalProgra3\cmake-build-debug\.cmake\api\v1\reply\cache-v2-9558f9fb81554a17aa3f.json'

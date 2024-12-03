@@ -1,76 +1,88 @@
 #include <iostream>
-
-#include "classUsuario/usuario.h"
 #include "classPelicula/procesarCsv.cpp"
+#include "nodoYarbol/arbolPeliculas.h"
+#include "classBusqueda/busqueda.h"
+
 using namespace std;
 
-int main()
-{
-    // Crear una instancia de LecturaDatos
-    //LecturaDatos lector;
+int main() {
+    cout << "Bienvenido!" << endl;
+
+    // Crear una instancia de LecturaDatos para procesar el archivo CSV
     LecturaDatos lector;
 
-    // Archivo de prueba
-    string archivoPrueba = "C:/Users/Jordinn/Downloads/pruebaa.csv";
+    // Ruta del archivo CSV
+    string archivoCsv = "C:/Users/Fernando/Downloads/pruebaa.csv";
 
     // Leer datos desde el CSV
-    lector.leerDatosDelCsv(archivoPrueba);
+    lector.leerDatosDelCsv(archivoCsv);
 
+    // Crear el árbol de prefijos
+    ArbolPeliculas arbol;
 
-    // Obtener las películas leídas
+    // Insertar las películas en el árbol
     const auto& peliculas = lector.getPeliculas();
+    for (const auto& [id, peli] : peliculas) {
+        arbol.insertar(peli);
+    }
 
+    // Crear la instancia de Busqueda
+    Busqueda busqueda(&arbol);
 
-    cout << "\nBienvenido a nuestro servicio de Streaming!" << endl;
-    cout << "Crea un Usuario!" << endl;
+    // Menú interactivo
+    int opcion;
+    do {
+        cout << "\nSeleccione una opcion:\n";
+        cout << "1. Buscar por palabra\n";
+        cout << "2. Buscar por frase\n";
+        cout << "3. Buscar por string\n";
+        cout << "4. Buscar por tag\n";
+        cout << "5. Salir\n";
+        cout << "Opcion:";
+        cin >> opcion;
+        cin.ignore();  // Ignorar el salto de línea después del número
 
+        string termino;
+        vector<pelicula> resultados;
 
-    usuario<string>* usuario1 = usuario<string>::getInstance();
-    usuario1->login();
+        switch (opcion) {
+            case 1:
+                cout << "Ingrese la palabra para buscar:";
+                getline(cin, termino);
+                resultados = busqueda.buscarPorPalabra(termino);
+                busqueda.mostrarResultados(resultados);
+                break;
 
-    if(usuario1->getaccesoAlServicio()){
-        cout << "acceso al servicio correcto!";
+            case 2:
+                cout << "Ingrese la frase para buscar:";
+                getline(cin, termino);
+                resultados = busqueda.buscarPorFrase(termino);
+                busqueda.mostrarResultados(resultados);
+                break;
 
-    } else{cout << "ocurrio un error";}
+            case 3:
+                cout << "Ingrese el string para buscar:";
+                getline(cin, termino);
+                resultados = busqueda.buscarPorString(termino);
+                busqueda.mostrarResultados(resultados);
+                break;
 
+            case 4:
+                cout << "Ingrese el tag para buscar:";
+                getline(cin, termino);
+                resultados = busqueda.buscarPorTag(termino);
+                busqueda.mostrarResultados(resultados);
+                break;
 
+            case 5:
+                cout << "Gracias por usar la plataforma. ¡Hasta pronto!\n";
+                break;
 
-
-
-
-
-
-
-
-
-    // Mostrar los datos de las películas
-
-    cout << "Peliculas cargadas:" << endl;
-    for (const auto& [id, pelicula] : peliculas) {
-        cout << "ID: " << id << endl;
-        cout << "Titulo: " << pelicula.getTitulo() << endl;
-        cout << "Sinopsis: " << pelicula.getSinopsis() << endl;
-        //cout << "Fuente: " << pelicula.getFuente() << endl;
-
-        // Mostrar los tags
-        cout << "Tags: ";
-        for (const auto& tag : pelicula.getTags()) {
-            cout << tag << ", ";
+            default:
+                cout << "Opcion no valida. Intentelo nuevamente.\n";
+                break;
         }
-        cout << endl << "-----------------------" << endl;
-    }
+    } while (opcion != 5);
 
-
-/*
-    //Seleccion de pelicula
-    for (const auto& [id, pelicula] : peliculas) {
-        cout << "ID: " << id << endl;
-        cout << "Título: " << pelicula.getTitulo() << endl;
-
-        pelicula.mostrarDetallesPelicula();
-
-        cout << "-----------------------" << endl;
-    }
-*/
     return 0;
 }
