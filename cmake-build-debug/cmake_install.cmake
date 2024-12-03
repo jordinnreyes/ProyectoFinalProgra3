@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Fernando/Desktop/Progra Final/ProyectoFinalProgra3-main
+# Install script for directory: C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Fernando/Desktop/Progra Final/ProyectoFinalProgra3-main/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

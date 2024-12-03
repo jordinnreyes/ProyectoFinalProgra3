@@ -4,27 +4,31 @@
 
 #include "nodo.h"
 
-// Constructor
-Nodo::Nodo(const pelicula& data) : data(data), left(nullptr), right(nullptr) {}
-
-// Getters
-const pelicula& Nodo::getData() const {
-    return data;
+char Nodo::getCaracter() const {
+    return caracter;
 }
 
-Nodo* Nodo::getLeft() const {
-    return left;
+Nodo* Nodo::getHijo(char c) const {
+    auto it = hijos.find(c);
+    return it != hijos.end() ? it->second : nullptr;
 }
 
-Nodo* Nodo::getRight() const {
-    return right;
+void Nodo::agregarHijo(char c) {
+    if (hijos.find(c) == hijos.end()) {
+        hijos[c] = new Nodo(c);
+    }
 }
 
-// Setters
-void Nodo::setLeft(Nodo* left) {
-    this->left = left;
+void Nodo::agregarPelicula(const pelicula& peli) {
+    peliculas.push_back(peli);
 }
 
-void Nodo::setRight(Nodo* right) {
-    this->right = right;
+const vector<pelicula>& Nodo::getPeliculas() const {
+    return peliculas;
+}
+
+Nodo::~Nodo() {
+    for (auto& [_, hijo] : hijos) {
+        delete hijo;
+    }
 }

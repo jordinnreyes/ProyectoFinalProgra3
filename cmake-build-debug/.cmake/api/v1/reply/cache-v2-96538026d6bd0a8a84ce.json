@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Fernando/Desktop/Progra Final/ProyectoFinalProgra3-main/cmake-build-debug"
+			"value" : "c:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -559,7 +559,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Fernando/Desktop/Progra Final/ProyectoFinalProgra3-main/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,7 +631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Fernando/Desktop/Progra Final/ProyectoFinalProgra3-main"
+			"value" : "C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1267,7 +1267,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Fernando/Desktop/Progra Final/ProyectoFinalProgra3-main/cmake-build-debug"
+			"value" : "C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3/cmake-build-debug"
 		},
 		{
 			"name" : "ProyectoFinalProgra3_IS_TOP_LEVEL",
@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Fernando/Desktop/Progra Final/ProyectoFinalProgra3-main"
+			"value" : "C:/Users/Fernando/Desktop/Avance personal/ProyectoFinalProgra3"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

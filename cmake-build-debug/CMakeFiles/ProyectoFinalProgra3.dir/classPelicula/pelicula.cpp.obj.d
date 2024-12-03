@@ -1,6 +1,6 @@
 CMakeFiles/ProyectoFinalProgra3.dir/classPelicula/pelicula.cpp.obj: \
- C:\Users\Fernando\Desktop\Progra\ Final\ProyectoFinalProgra3-main\classPelicula\pelicula.cpp \
- C:\Users\Fernando\Desktop\Progra\ Final\ProyectoFinalProgra3-main\classPelicula\pelicula.h \
+ C:\Users\Fernando\Desktop\Avance\ personal\ProyectoFinalProgra3\classPelicula\pelicula.cpp \
+ C:\Users\Fernando\Desktop\Avance\ personal\ProyectoFinalProgra3\classPelicula\pelicula.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.0.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.0.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.0.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
