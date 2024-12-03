@@ -36,7 +36,7 @@ int main() {
         cout << "1. Buscar por palabra\n";
         cout << "2. Buscar por frase\n";
         cout << "3. Buscar por string\n";
-        //cout << "4. Buscar por tag\n";
+        //cout << "4. Buscar por tag\n";a
         cout << "5. Salir\n";
         cout << "Opcion:";
         cin >> opcion;
