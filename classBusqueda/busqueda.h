@@ -34,7 +34,7 @@ public:
     // Mostrar resultados
     void mostrarResultados(const vector<pelicula>& resultados) const;
     int contarCoincidencias(const pelicula& peli, const string& termino)const;
-    vector<pelicula> Busqueda::obtenerTop5PeliculasPorCoincidencias(vector<pelicula>& peliculas, const string& termino) const;
+    vector<pelicula> obtenerTop5PeliculasPorCoincidencias(vector<pelicula>& peliculas, const string& termino) const;
 };
 
 #endif // BUSQUEDA_H
