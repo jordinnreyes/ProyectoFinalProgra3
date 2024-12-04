@@ -12,10 +12,10 @@ int main() {
     LecturaDatos lector;
 
     // Ruta del archivo CSV
-    string archivoCsv = "C:/Users/HP/CLionProjects/ProyectoFinalProgra3/pruebaa.csv";
+    string archivoCsv = "C:/Users/HP/CLionProjects/ProyectoFinalProgra3/mpst_full_data.csv";
 
     // Leer datos desde el CSV
-    lector.leerDatosDelCsv(archivoCsv);
+    lector.leerDatosDelCsv2(archivoCsv);
 
     // Crear el árbol de prefijos
     ArbolPeliculas arbol;
