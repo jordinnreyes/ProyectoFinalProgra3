@@ -7,6 +7,7 @@ using namespace std;
 
 int main() {
     cout << "Bienvenido!" << endl;
+    cout << "Porfavor espera, estamos cargando el streaming!" << endl;
 
     // Crear una instancia de LecturaDatos para procesar el archivo CSV
     LecturaDatos lector;
@@ -43,8 +44,10 @@ int main() {
         cin.ignore();  // Ignorar el salto de línea después del número
 
         string termino;
+        string opcion2;
         vector<pelicula> resultados;
         vector<pelicula> resultados5primeros;
+
 
         switch (opcion) {
             case 1:
@@ -52,7 +55,13 @@ int main() {
                 getline(cin, termino);
                 resultados = busqueda.buscarPorPalabra(termino);
                 resultados5primeros = busqueda.obtenerTop5PeliculasPorCoincidencias(resultados,termino);
+                cout << "Esta son las 5 primeras peliculas recomendadas";
                 busqueda.mostrarResultados(resultados5primeros);
+                cout << "Desea ver mas resultados? (Si/No)";
+                getline(cin,opcion2);
+                if (opcion2 == "Si")
+                    busqueda.mostrarResultados(resultados);
+                else busqueda.mostrarResultados(resultados5primeros);
                 break;
 
             case 2:
@@ -60,7 +69,13 @@ int main() {
                 getline(cin, termino);
                 resultados = busqueda.buscarPorFrase(termino);
                 resultados5primeros = busqueda.obtenerTop5PeliculasPorCoincidencias(resultados,termino);
+                cout << "Esta son las 5 primeras peliculas recomendadas";
                 busqueda.mostrarResultados(resultados5primeros);
+                cout << "Desea ver mas resultados? (Si/No)";
+                getline(cin,opcion2);
+                if (opcion2 == "Si")
+                busqueda.mostrarResultados(resultados);
+                else busqueda.mostrarResultados(resultados5primeros);
                 break;
 
             case 3:
@@ -68,7 +83,13 @@ int main() {
                 getline(cin, termino);
                 resultados = busqueda.buscarPorString(termino);
                 resultados5primeros = busqueda.obtenerTop5PeliculasPorCoincidencias(resultados,termino);
+                cout << "Esta son las 5 primeras peliculas recomendadas";
                 busqueda.mostrarResultados(resultados5primeros);
+                cout << "Desea ver mas resultados? (Si/No)";
+                getline(cin,opcion2);
+                if (opcion2 == "Si")
+                    busqueda.mostrarResultados(resultados);
+                else busqueda.mostrarResultados(resultados5primeros);
                 break;
 /*
             case 4:
