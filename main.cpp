@@ -12,7 +12,7 @@ int main() {
     LecturaDatos lector;
 
     // Ruta del archivo CSV
-    string archivoCsv = "C:/Users/Jordinn/Downloads/pruebaa.csv";
+    string archivoCsv = "C:/Users/HP/CLionProjects/ProyectoFinalProgra3/pruebaa.csv";
 
     // Leer datos desde el CSV
     lector.leerDatosDelCsv(archivoCsv);
@@ -44,27 +44,31 @@ int main() {
 
         string termino;
         vector<pelicula> resultados;
+        vector<pelicula> resultados5primeros;
 
         switch (opcion) {
             case 1:
                 cout << "Ingrese la palabra para buscar:";
                 getline(cin, termino);
                 resultados = busqueda.buscarPorPalabra(termino);
-                busqueda.mostrarResultados(resultados);
+                resultados5primeros = busqueda.obtenerTop5PeliculasPorCoincidencias(resultados,termino);
+                busqueda.mostrarResultados(resultados5primeros);
                 break;
 
             case 2:
                 cout << "Ingrese la frase para buscar:";
                 getline(cin, termino);
                 resultados = busqueda.buscarPorFrase(termino);
-                busqueda.mostrarResultados(resultados);
+                resultados5primeros = busqueda.obtenerTop5PeliculasPorCoincidencias(resultados,termino);
+                busqueda.mostrarResultados(resultados5primeros);
                 break;
 
             case 3:
                 cout << "Ingrese el string para buscar:";
                 getline(cin, termino);
                 resultados = busqueda.buscarPorString(termino);
-                busqueda.mostrarResultados(resultados);
+                resultados5primeros = busqueda.obtenerTop5PeliculasPorCoincidencias(resultados,termino);
+                busqueda.mostrarResultados(resultados5primeros);
                 break;
 /*
             case 4:
