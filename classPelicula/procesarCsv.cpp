@@ -1,8 +1,4 @@
 
-
-
-
-
 #include <iostream>
 #include "pelicula.h"
 #include <sstream>
