@@ -9,6 +9,9 @@ Este proyecto es un buscador de películas en streaming que permite:
 - Realizar búsquedas avanzadas utilizando estructuras de datos como árboles.
 - Cargar datos desde archivos CSV.
 
+
+## Vista previa del proyecto
+
 ![Vista previa del proyecto](imagen1final.png)
 
 
