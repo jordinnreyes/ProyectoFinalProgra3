@@ -13,6 +13,8 @@ void Busqueda::buscarEnTexto(const pelicula& peli, const string& termino, vector
     string titulo = peli.getTitulo();
     string sinopsis = peli.getSinopsis();
 
+    int coincidencias = 0;
+
     if (buscarSubstring) {
         if (titulo.find(termino) != string::npos || sinopsis.find(termino) != string::npos) {
             resultados.push_back(peli);
@@ -49,6 +51,63 @@ vector<pelicula> Busqueda::buscarPorPalabra(const string& palabra) const {
     dfs(arbol->getRaiz(), palabra, resultados, false);
     return resultados;
 }
+
+
+// contarCoincidencias: Cuenta la cantidad de coincidencias de un término en el título, sinopsis y tags de una película
+int Busqueda::contarCoincidencias(const pelicula& peli, const string& termino)const {
+    int coincidencias = 0;
+    string titulo = peli.getTitulo();
+    string sinopsis = peli.getSinopsis();
+    unordered_set<string> tags = peli.getTags(); // Suponiendo que los tags están en un unordered_set
+
+    // Contamos las coincidencias en el título
+    size_t pos = 0;
+    while ((pos = titulo.find(termino, pos)) != string::npos) {
+        coincidencias++;
+        pos += termino.length();
+    }
+
+    // Contamos las coincidencias en la sinopsis
+    pos = 0;
+    while ((pos = sinopsis.find(termino, pos)) != string::npos) {
+        coincidencias++;
+        pos += termino.length();
+    }
+
+    // Contamos las coincidencias en los tags
+    for (const string& tag : tags) {
+        pos = 0;
+        while ((pos = tag.find(termino, pos)) != string::npos) {
+            coincidencias++;
+            pos += termino.length();
+        }
+    }
+
+    return coincidencias;
+}
+
+
+vector<pelicula> Busqueda::obtenerTop5PeliculasPorCoincidencias(vector<pelicula>& peliculas, const string& termino) const {
+    // Si el vector tiene menos de 5 películas, no hacemos nada
+    if (peliculas.size() <= 5) {
+        return peliculas;
+    }
+
+    // Ordenamos el vector por la cantidad de coincidencias (de mayor a menor)
+    sort(peliculas.begin(), peliculas.end(), [this, &termino](const pelicula& a, const pelicula& b) {
+        // Capturamos 'this' para poder acceder a la función miembro contarCoincidencias
+        return contarCoincidencias(a, termino) > contarCoincidencias(b, termino);
+    });
+
+    // Devolvemos solo las 5 primeras películas con más coincidencias
+    peliculas.resize(5);
+
+    return peliculas;
+}
+
+
+
+
 
 // Búsqueda por frase
 vector<pelicula> Busqueda::buscarPorFrase(const string& frase) const {
@@ -91,6 +150,10 @@ vector<pelicula> Busqueda::buscarPorTag(const string& tag) const {
 
     return resultados;
 }
+
+
+
+
 
 // Mostrar resultados
 void Busqueda::mostrarResultados(const vector<pelicula>& resultados) const {

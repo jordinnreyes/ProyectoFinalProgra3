@@ -20,6 +20,8 @@ private:
     string sinopsis;
     unordered_set<string> tags;
     string fuente;
+
+
 public:
     pelicula() = default;
     pelicula(string id_, string titulo_, string sinopsis_, unordered_set<string> tags_, string fuente_) : id(move(id_)),
@@ -66,6 +68,7 @@ public:
         // Asignación de fuente (sin validaciones adicionales)
         fuente = fuente_;
     }
+
 };
 
 
