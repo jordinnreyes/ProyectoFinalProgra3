@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3/cmake-build-debug",
-		"source" : "C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3"
+		"build" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3/cmake-build-debug",
+		"source" : "C:/Users/Jordinn/CLionProjects/ProyectoFinalProgra3"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }
