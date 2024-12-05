@@ -7,15 +7,16 @@ using namespace std;
 
 int main() {
     cout << "Bienvenido!" << endl;
+    cout << "Porfavor espera, estamos cargando el streaming!" << endl;
 
     // Crear una instancia de LecturaDatos para procesar el archivo CSV
     LecturaDatos lector;
 
     // Ruta del archivo CSV
-    string archivoCsv = "C:/Users/Jordinn/Downloads/pruebaa.csv";
+    string archivoCsv = "C:/Users/Isaac/Downloads/mpst_full_data.csv";
 
     // Leer datos desde el CSV
-    lector.leerDatosDelCsv(archivoCsv);
+    lector.leerDatosDelCsv2(archivoCsv);
 
     // Crear el árbol de prefijos
     ArbolPeliculas arbol;
@@ -32,6 +33,25 @@ int main() {
     // Menú interactivo
     int opcion;
     do {
+
+        vector<pelicula> verMasTarde;
+        vector<pelicula> peliculasLike;
+
+        // Mostrar "Ver más tarde"
+        cout << "\nPeliculas en 'Ver mas tarde':\n";
+        for (const auto& peli : verMasTarde) {
+            cout << "- " << peli.getTitulo() << endl;
+        }
+
+        cout << "\nPeliculas similares a las que te gustaron:\n";
+        for (const auto& peliLike : peliculasLike) {
+            for (const auto& [id, peli] : peliculas) {
+                if (peliLike.tieneTagsComunes(peli) && peliLike.getId() != peli.getId()) {
+                    cout << "- " << peli.getTitulo() << " (similar a " << peliLike.getTitulo() << ")" << endl;
+                }
+            }
+        }
+
         cout << "\nSeleccione una opcion:\n";
         cout << "1. Buscar por palabra\n";
         cout << "2. Buscar por frase\n";
@@ -43,28 +63,52 @@ int main() {
         cin.ignore();  // Ignorar el salto de línea después del número
 
         string termino;
+        string opcion2;
         vector<pelicula> resultados;
+        vector<pelicula> resultados5primeros;
+
 
         switch (opcion) {
             case 1:
                 cout << "Ingrese la palabra para buscar:";
                 getline(cin, termino);
                 resultados = busqueda.buscarPorPalabra(termino);
-                busqueda.mostrarResultados(resultados);
+                resultados5primeros = busqueda.obtenerTop5PeliculasPorCoincidencias(resultados,termino);
+                cout << "Esta son las 5 primeras peliculas recomendadas";
+                busqueda.mostrarResultados(resultados5primeros);
+                cout << "Desea ver mas resultados? (Si/No)";
+                getline(cin,opcion2);
+                if (opcion2 == "Si")
+                    busqueda.mostrarResultados(resultados);
+                else busqueda.mostrarResultados(resultados5primeros);
                 break;
 
             case 2:
                 cout << "Ingrese la frase para buscar:";
                 getline(cin, termino);
                 resultados = busqueda.buscarPorFrase(termino);
+                resultados5primeros = busqueda.obtenerTop5PeliculasPorCoincidencias(resultados,termino);
+                cout << "Esta son las 5 primeras peliculas recomendadas";
+                busqueda.mostrarResultados(resultados5primeros);
+                cout << "Desea ver mas resultados? (Si/No)";
+                getline(cin,opcion2);
+                if (opcion2 == "Si")
                 busqueda.mostrarResultados(resultados);
+                else busqueda.mostrarResultados(resultados5primeros);
                 break;
 
             case 3:
                 cout << "Ingrese el string para buscar:";
                 getline(cin, termino);
                 resultados = busqueda.buscarPorString(termino);
-                busqueda.mostrarResultados(resultados);
+                resultados5primeros = busqueda.obtenerTop5PeliculasPorCoincidencias(resultados,termino);
+                cout << "Esta son las 5 primeras peliculas recomendadas";
+                busqueda.mostrarResultados(resultados5primeros);
+                cout << "Desea ver mas resultados? (Si/No)";
+                getline(cin,opcion2);
+                if (opcion2 == "Si")
+                    busqueda.mostrarResultados(resultados);
+                else busqueda.mostrarResultados(resultados5primeros);
                 break;
 /*
             case 4:

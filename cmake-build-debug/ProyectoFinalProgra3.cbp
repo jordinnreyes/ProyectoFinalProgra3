@@ -82,10 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3/classPelicula/builder.cpp">
+		<Unit filename="C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3/classBusqueda/busqueda.cpp">
 			<Option target="ProyectoFinalProgra3"/>
 		</Unit>
-		<Unit filename="C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3/classPelicula/builder.h">
+		<Unit filename="C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3/classBusqueda/busqueda.h">
 			<Option target="ProyectoFinalProgra3"/>
 		</Unit>
 		<Unit filename="C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3/classPelicula/pelicula.cpp">
@@ -95,6 +95,9 @@
 			<Option target="ProyectoFinalProgra3"/>
 		</Unit>
 		<Unit filename="C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3/classPelicula/procesarCsv.cpp">
+			<Option target="ProyectoFinalProgra3"/>
+		</Unit>
+		<Unit filename="C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3/classPelicula/procesarCsv.h">
 			<Option target="ProyectoFinalProgra3"/>
 		</Unit>
 		<Unit filename="C:/Users/Isaac/CLionProjects/ProyectoFinalProgra3/classUsuario/usuario.h">
