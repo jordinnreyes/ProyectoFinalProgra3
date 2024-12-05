@@ -1,29 +1,54 @@
-/*
 #include "pelicula.h"
+#include <iostream>
+#include <algorithm>
+#include <unordered_set>
 
-void pelicula::mostrarDetallesPelicula() const {
-    cout << "Detalles de la película:" << endl;
-    cout << "Título: " << titulo << endl;
-    cout << "Sinopsis: " << sinopsis << endl;
+using namespace std;
 
-    cout << "Opciones disponibles:" << endl;
-    cout << "1. Like" << endl;
-    cout << "2. Ver más tarde" << endl;
+/*
+void pelicula::mostrarDetallesPelicula() {
+    cout << "\nDetalles de la película seleccionada:\n";
+    cout << "Título: " << titulo << "\n";
+    cout << "Sinopsis: " << sinopsis << "\n";
+    cout << "Fuente: " << fuente << "\n";
+
+    // Mostrar los tags
+    cout << "Tags: ";
+    for (const auto& tag : tags) {
+        cout << tag << ", ";
+    }
+    cout << "\n\nOpciones disponibles:\n";
+    cout << "1. Like\n";
+    cout << "2. Ver más tarde\n";
+    cout << "3. Volver al menú principal\n";
 
     int opcion;
-    cout << "Seleccione una opción (1 o 2, o cualquier otra tecla para salir): ";
     cin >> opcion;
+    cin.ignore();
 
-    auto self = const_cast<pelicula*>(this);
-
-    if (opcion == 1) {
-        self->like = true;
-        cout << "Has marcado esta película con Like." << endl;
-    } else if (opcion == 2) {
-        self->verMasTarde = true;
-        cout << "Has añadido esta película a Ver más tarde." << endl;
-    } else {
-        cout << "No se realizó ninguna acción." << endl;
+    switch (opcion) {
+        case 1:
+            self ->like = true;
+            cout << "Has marcado la película como 'Like'.\n";
+            break;
+        case 2:
+            verMasTarde = true;
+            cout << "Has añadido la película a 'Ver más tarde'.\n";
+            break;
+        case 3:
+            cout << "Regresando al menú principal...\n";
+            break;
+        default:
+            cout << "Opción no válida. Intenta nuevamente.\n";
     }
 }
-*/
+ */
+
+bool pelicula::tieneTagsComunes(const pelicula& otra) const {
+    for (const auto& tag : tags) {
+        if (otra.getTags().find(tag) != otra.getTags().end()) {
+            return true;
+        }
+    }
+    return false;
+}

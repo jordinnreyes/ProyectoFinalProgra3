@@ -13,7 +13,7 @@ int main() {
     LecturaDatos lector;
 
     // Ruta del archivo CSV
-    string archivoCsv = "C:/Users/HP/CLionProjects/ProyectoFinalProgra3/mpst_full_data.csv";
+    string archivoCsv = "C:/Users/Isaac/Downloads/mpst_full_data.csv";
 
     // Leer datos desde el CSV
     lector.leerDatosDelCsv2(archivoCsv);
@@ -33,6 +33,25 @@ int main() {
     // Menú interactivo
     int opcion;
     do {
+
+        vector<pelicula> verMasTarde;
+        vector<pelicula> peliculasLike;
+
+        // Mostrar "Ver más tarde"
+        cout << "\nPeliculas en 'Ver mas tarde':\n";
+        for (const auto& peli : verMasTarde) {
+            cout << "- " << peli.getTitulo() << endl;
+        }
+
+        cout << "\nPeliculas similares a las que te gustaron:\n";
+        for (const auto& peliLike : peliculasLike) {
+            for (const auto& [id, peli] : peliculas) {
+                if (peliLike.tieneTagsComunes(peli) && peliLike.getId() != peli.getId()) {
+                    cout << "- " << peli.getTitulo() << " (similar a " << peliLike.getTitulo() << ")" << endl;
+                }
+            }
+        }
+
         cout << "\nSeleccione una opcion:\n";
         cout << "1. Buscar por palabra\n";
         cout << "2. Buscar por frase\n";
