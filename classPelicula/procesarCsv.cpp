@@ -81,15 +81,15 @@ public:
             string imdb_id, title, plot_synopsis, tagsStr, split, synopsis_source;
 
             try {
-                // Procesar campos respetando las comillas
+                
                 getline(stream, imdb_id, '"');
                 getline(stream, imdb_id, ',');
 
-                // Leer title con la lógica que sugeriste
+                
                 if (stream.peek() == '"') {
                     stream.get(); // Consumir la comilla inicial
                     getline(stream, title, '"');
-                    stream.get(); // Consumir la coma después de las comillas
+                    stream.get(); 
                 } else {
                     getline(stream, title, ',');
                 }
@@ -121,12 +121,12 @@ public:
                     cout << "Tags con comillas: '" << tagsStr << "'" << endl;
 
                 } else {
-                    getline(stream, tagsStr, ',');// Leer hasta la coma si no está entre comillas
+                    getline(stream, tagsStr, ',');
                     cout << "Tags sin comillas: '" << tagsStr << "'" << endl;
                 }
 
 
-                // Procesar los tags usando la nueva función dividirConComillas
+                
                 unordered_set<string> tags  = ExtraerTags(tagsStr);
 
 
@@ -144,11 +144,11 @@ public:
                 }
 
 
-                // Configurar la nueva película
+               
                 pelicula nuevaPelicula;
                 nuevaPelicula.configurarPropiedades(imdb_id, title, plot_synopsis, tags, synopsis_source);
 
-                // Guardar la película en el mapa
+              
                 peliculas[imdb_id] = move(nuevaPelicula);
                 peliculasExitosas++;
             } catch (const exception& e) {
@@ -167,10 +167,10 @@ public:
         return peliculas;
     }
 
-    // Función para limpiar comillas dobles escapadas
+    
     string limpiarComillasDobles(const string& input) {
         string resultado = input;
-        // Reemplazar "" por "
+       
         size_t pos = 0;
         while ((pos = resultado.find("\"\"", pos)) != string::npos) {
             resultado.replace(pos, 2, "\"");
